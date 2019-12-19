@@ -2,6 +2,8 @@ FROM golang:alpine AS builder
 
 MAINTAINER siddontang
 
+EXPOSE 12800/tcp
+
 RUN apk add --no-cache tini mariadb-client
 
 #RUN cd /go/src/github.com/siddontang/go-mysql-elasticsearch/ && \
